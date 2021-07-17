@@ -1,0 +1,915 @@
+<!-- Main navigation -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> 
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+        <style type="text/css">
+        /* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+        </style>
+    </head>
+    <body data-gr-c-s-loaded="true">
+        <style type="text/css">
+
+            /* Required for full background image */
+
+            html,
+            body,
+            header,
+            #intro-section {
+                height: 100%;
+            }
+
+            @media (max-width: 740px) {
+                html,
+                body,
+                header,
+                #intro-section {
+                    height: 100vh;
+                }
+            }
+
+            .top-nav-collapse, .page-footer {
+                background-color: #563e91!important;
+            }
+
+            .navbar:not(.top-nav-collapse) {
+                background: transparent !important;
+            }
+
+            @media (max-width: 991px) {
+                .navbar:not(.top-nav-collapse) {
+                    background: #563e91 !important;
+                }
+            }
+
+
+            .img-gradient:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+                /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Opera 11.10+ */
+                /* IE10+ */
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+                background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+                /* IE6-9 */
+            }
+
+            img{ max-width:100%;}
+
+			.gallery_box li{
+				 width:33.333333%; 
+				 max-width: 100% ; 
+				 display:inline-block; 
+				 float: left; 
+				 text-align: center; 
+				 overflow: hidden;    
+				 position: relative;
+			}
+			.gallery_box{ 
+				padding:0;
+				display: flow-root;
+			}
+
+			.gallery_box li:hover img {
+			    -moz-transform: scale(1.1);
+			    -webkit-transform: scale(1.1);
+			    -ms-transform: scale(1.1);
+			    -o-transform: scale(1.1);
+			    transform: scale(1.1);
+			}
+			.gallery_box li img{-webkit-transition: transform 0.5s ease;
+			    -o-transition: transform 0.5s ease;
+			    transition: transform 0.5s ease;}
+			.gallery_box li:nth-child(even) {
+			    height: 304px;
+			}
+			.gallery_box li:nth-child(odd) {
+			    height: 438px;
+			}
+			.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+			.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+			.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+			.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+			.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+
+        </style>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Kunal Sharma</a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarTogglerDemo02" style>
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#about" data-offset="90">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#projects" data-offset="90">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#gallery" data-offset="90">Gallery</a>
+                        </li>
+
+                       <!-- <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#testimonials" data-offset="30">Testimonials</a>
+                        </li>-->
+
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#articles" data-offset="90">Articles</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#job" data-offset="90">Jobs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="#contact" data-offset="90">Contact</a>
+                        </li>
+
+                     <!--   <li class="nav-item">
+                            <div class="dropdown">
+                                <div class="btn-group dropright">
+                                    <a class="btn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="https://timesofindia.indiatimes.com/" target="_blank"><b>The Times of India</b></a>
+                                        <a class="dropdown-item" href="https://economictimes.indiatimes.com/" target="_blank"><b>The Economic Times</b></a>
+                                        <a class="dropdown-item" href="https://www.thehindu.com/" target="_blank"><b>The Hindu</b></a>
+                                        <a class="dropdown-item" href="https://www.bhaskar.com/" target="_blank"><b>Dainik Bhaskar</b></a>
+                                        <a class="dropdown-item" href="https://www.patrika.com/rajasthan-news/" target="_blank"><b>Rajasthan Patrika</b></a>
+                                    </div> 
+                                </div>
+                            </div>
+                       </li>  -->
+                    </ul>
+                    
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="https://www.facebook.com/profile.php?id=100009461494163" target="_blank">
+                                <i class="fab fa-facebook light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="https://www.twitter.com" target="_blank">
+                                <i class="fab fa-twitter light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="https://www.instagram.com" target="_blank">
+                                <i class="fab fa-instagram light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="https://www.linkedin.com/in/kunal-sharma-7b0242136/" target="_blank">
+                                <i class="fab fa-linkedin light-green-text-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <!-- Full Page Intro -->
+        <div id="intro-section" class="view">
+            <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay muted loop __idm_id__="933079041">
+            <source src="assets/video/coder.mp4" type="video/mp4">
+            </video>
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container px-md-3 px-sm-0">
+                    <!--Grid row-->
+                    <div class="row wow fadeIn">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Kunal Sharma</h3>
+                            <hr class="hr-light my-4 w-75">
+                            <h4 class="subtext-header mt-2 mb-4">Love To Create Something New.</h4>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+        </div>
+        <!-- Full Page Intro -->
+    </header>
+
+    <!--Main layout-->
+    <main>
+
+        <!--Section: about-->
+        <section id="about" class="py-5">
+
+            <!-- Container -->
+            <div class="container">
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center mb-5"><br>About Me</h2>
+                <!-- Section description -->
+                <p class="lead black-text text-center w-responsive mx-auto mb-5">Meet me, an enthusiastic program who is always ready to grab the opportunity to come on the way</p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-5 text-center text-lg-left">
+                        <img src="assets/images/me_wtfrm.jpg" height="100%" width="100%" alt="Hey! thats me">
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-7">
+
+                        <!-- Grid row -->
+                        <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3"><br><br>Introduction</h5>
+                                <p class="black-text">I am Kunal Sharma. I belong to the Suncity of India also known as Bluecity i.e.Jodhpur. My hobbies are exploring new things, Martial arts and sketching too.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">Current Status</h5>
+                                <p class="black-text">Currently I'm in 3rd sem pursuing B.Tech(CSE) from <a href="https://www.amity.edu/jaipur/about-amity-jaipur" target="_blank">Amity University, Jaipur(Raj.)</a></p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                       <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">Technologies Known</h5>
+                                <p class="black-text"> "Programming Languages" :- C<br>"Others" :- DSA, HTML, CSS</p>
+                            </div>
+                            <!-- Grid column -->
+
+                       </div>
+                        <!-- Grid row -->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">Achievements</h5>
+                                <p class="black-text">"Achievement seems to be connected with action. Successful people keep moving. They make mistakes but they don't quit." So, one of my best achievement is that I'm a <strong>National Bronze Medalist</strong> in 37th National Mitsuya-Kai Karate Championship (November-2018)</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!--Grid row-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: about-->
+
+        <!--Section: projects-->
+        <section id="projects" class="text-center py-5" style="background-color: rgb(238,238,238); --darkreader-inline-bgcolor:#292b2e;" data-darkreader-inline-bgcolor>
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5"><br>My projects</h2>
+                <!-- Section description -->
+                <p class="lead black-text w-responsive mx-auto mb-5">Projects are the best way to analyze the learning. Implementation is the key to success. Have a look at my projects here.</p>
+
+                <!-- Grid row -->
+                <div class="row text-center">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="assets/images/Line Follower.jpg" class="img-fluid" alt="Line Follower">
+                            <a>
+                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">Line Follower</h4>
+                            <p class="black-text">The line follower robot is a mobile machine that can detect and follow the line drawn on the floor. Generally, the path is predefined and can be either visible like a black line on a white surface with a high contrasted color or it can be invisible like a magnetic filed.
+                            </p>
+                            <a class="btn btn-purple btn-sm waves-effect waves-light"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="assets/images/tictactoegame.png" class="img-fluid" alt="Tic-Tac-Toe">
+                            <a>
+                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">Tic-Tac-Toe</h4>
+                            <p class="black-text">Tic-tac-toe or noughts and crosses or X-O is a paper-and-pencil game for two players, <b>X</b> and <b>O</b>, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+                            </p>
+                            <a class="btn btn-purple btn-sm waves-effect waves-light"><i class="fa fa-clone left"></i> View project </a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="assets/images/Connect Four.png" class="img-fluid" alt="Connect Four">
+                            <a>
+                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">Connect Four</h4>
+                            <p class="black-text">Connect Four is a two-player connection board game in which the players first choose a color and then take turns dropping one colored disc. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs.
+                            </p>
+                            <a class="btn btn-purple btn-sm waves-effect waves-light"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: projects-->
+
+        <!--Section: gallery-->
+        <section id="gallery" class="text-center py-5">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5"><br>Gallery</h2>
+                <!-- Section description -->
+                <p class="lead black-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+
+                <ul class="gallery_box">
+    <li>
+        <a href="#0"><img src="https://picsum.photos/600/700/?random">
+        <div class="box_data">
+            <span> Good Vibes </span>
+        </div></a>
+    </li>
+        <li>
+        <a href="#0"><img src="https://picsum.photos/600/701/?random">
+        <div class="box_data">
+            <span> Good Vibes </span>
+        </div></a>
+    </li>
+        <li>
+        <a href="#0"><img src="https://picsum.photos/600/702/?random">
+        <div class="box_data">
+            <span> Good Vibes </span>
+        </div></a>
+    </li>
+            <li>
+        <a href="#0"><img src="https://picsum.photos/600/703/?random">
+        <div class="box_data">
+            <span> Good Vibes </span>
+        </div></a>
+    </li>
+            <li style="    position: relative;
+    top: -134px;">
+        <a href="#0"><img src="https://picsum.photos/600/704/?random">
+        <div class="box_data">
+            <span> Good Vibes </span>
+        </div></a>
+    </li>
+            <li>
+        <a href="#0"><img src="https://picsum.photos/600/705/?random">
+        <div class="box_data">
+            <span> Good Vibes </span>
+        </div></a>
+    </li>
+   
+</ul>
+
+
+</div>
+<!-- Container -->
+
+</section>
+<!--Section: gallery-->
+
+<!--Section: testimonials-->
+<section id="testimonials" class="text-center py-5" style="background-color: #eee;">
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5"><br>Testimonials</h2>
+
+        <!-- Carousel Wrapper -->
+        <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
+        data-ride="carousel" data-interval="false">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid"
+                        alt="First sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet
+                        molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste
+                        impedit quidem dolor veniam.
+                    </p>
+                    <h4 class="font-weight-bold">Anna Deynah</h4>
+                    <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                    <!--Review-->
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star-half-full amber-text"> </i>
+                </div>
+            </div>
+            <!--First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid"
+                        alt="Second sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                    incidunt ut labore. </p>
+                    <h4 class="font-weight-bold">Maria Kate</h4>
+                    <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                    <!--Review-->
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                </div>
+            </div>
+            <!--Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid"
+                        alt="Third sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium.</p>
+                    <h4 class="font-weight-bold">John Doe</h4>
+                    <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                    <!--Review-->
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star-o amber-text"> </i>
+                </div>
+            </div>
+            <!--Third slide-->
+        </div>
+        <!--Slides-->
+        <!--Controls-->
+        <a class="carousel-item-prev left carousel-control" href="#carousel-example-1" role="button"
+        data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-item-next right carousel-control" href="#carousel-example-1" role="button"
+    data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+</a>
+<!--Controls-->
+</div>
+<!-- Carousel Wrapper -->
+
+</div>
+<!-- Container -->
+
+</section>
+<!--Section: testimonials-->
+
+<!--Section: call to action-->
+<div class="streak streak-md streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img(115).jpg')">
+    <div class="flex-center rgba-black-light pattern-1">
+        <div class="white-text smooth-scroll mx-4">
+            <h2 class="h2-responsive mb-5 wow fadeIn"><br>If you have any legal problem in your life ... We are
+            available</h2>
+            <div class="text-center">
+                <a href="#contact" class="btn btn-outline-white wow fadeIn " data-offset="100" data-wow-delay="0.2s">Contact
+                us</a>
+            </div><br>
+        </div>
+    </div>
+</div>
+<!--Section: call to action-->
+
+<!--Section: articles-->
+<section id="articles" class="text-center py-5">
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5"><br>Articles</h2>
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="assets/images/Tech_Article.jpg"
+                        alt="Tech Image">
+                        <a>
+                            <div class="mask img-gradient"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i></h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Tech inspirations</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="assets/images/Law_Article.jpg"
+                        alt="Legal Image">
+                        <a>
+                            <div class="mask img-gradient"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i></h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Legal inspirations</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="assets/images/Food_Article.jpg"
+                        alt="Food Image">
+                        <a>
+                            <div class="mask img-gradient"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i></h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </div>
+    <!-- Container -->
+
+</section>
+<!--Section: articles-->
+
+<!--Section: Job-->
+<section id="job" class="text-center py-5" style="background-color: #eee;>
+    <div class="container">
+        <h2 class="h1-responsive font-weight-bold text-center mb-5"><br>Job Opportunities</h2>
+            <p class="lead black-text text-center w-responsive mx-auto mb-5"><b>Coming Soon !!</b></p>
+    </div>
+</section>
+<!--Section: Job-->
+
+<!--Section: contact-->
+<section id="contact" class="py-5" >
+
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5"><br>Get in Touch</h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-9 mb-md-0 mb-5">
+
+                <form>
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="contact-name" class="form-control">
+                                <label for="contact-name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="email" id="inputEmail1" class="form-control" aria-describedby="emailHelp">
+                                <label for="inputEmail1" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="contact-Subject" class="form-control">
+                                <label for="contact-Subject" class="">Subject</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                                <label for="contact-message">Your message</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-purple btn-md">Send</a>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fa fa-map-marker fa-2x purple-text"></i>
+                        <p>Seth Hazari Mal Building, Jodhpur-342003(Raj.)</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone fa-2x mt-4 purple-text"></i>
+                        <p>+91 89529 72792</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope fa-2x mt-4 purple-text"></i>
+                        <p class="mb-0">kunal.sj01@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+
+</section>
+<!--Section: contact-->
+
+</main>
+<!--Main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+   
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Made with &#129505;
+        <a></a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
